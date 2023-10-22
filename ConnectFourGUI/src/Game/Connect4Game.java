@@ -282,7 +282,7 @@ public class Connect4Game extends JFrame {
         String timeRemaining = (currentPlayerTimeLimit > 0) ? "Time Remaining: " + currentPlayerTimeRemaining : "";
         statusLabel.setText(player + "'s Turn. " + timeRemaining);
     }
-
+    //Dialog Options
     private void showOptionsDialog() {
         Object[] options = {"Play with 10 seconds per turn", "Play with 30 seconds per turn", "Play with infinite time"};
         int choice = JOptionPane.showOptionDialog(this, "Choose an option:", "Connect Four", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
